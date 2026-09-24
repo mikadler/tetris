@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+
+    <!-- Blockrain's styling -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/mrcoles/blockrain.js@master/releases/blockrain.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #game {
+            width: 400px;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game"></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Blockrain -->
+    <script src="https://cdn.jsdelivr.net/gh/mrcoles/blockrain.js@master/releases/blockrain.js"></script>
+
+    <script>
+        $('#game').blockrain({
+            autoplay: false
+        });
+    </script>
+
+</body>
+</html>
